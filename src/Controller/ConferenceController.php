@@ -8,7 +8,7 @@ use Symfony\Component\Routing\Attribute\Route;
 
 final class ConferenceController extends AbstractController
 {
-    #[Route('/conference', name: 'app_conference')] // -> la route, name -> le nom de la route à utiliser dans la vue (par ex)
+    #[Route('/', name: 'home_page')] // -> la route, name -> le nom de la route à utiliser dans la vue (par ex)
     public function index(): Response
     {
         // return $this->render('conference/index.html.twig', [
